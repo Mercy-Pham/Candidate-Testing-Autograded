@@ -61,8 +61,6 @@ function gradeQuiz(candidateAnswers) {
   }
   
 
-
-
   let grade = numberOfCorrectAnswers/candidateAnswers.length*100;  //TODO 3.2 use this variable to calculate the candidates score.
   if (grade < 80) {
     console.log(`You received a grade of: ${grade}. You failed!`);
@@ -78,7 +76,7 @@ function runProgram() {
   // TODO 1.1c: Greet candidate using their name //
    console.log("Greetings",candidateName + "!");
   askQuestion();
-  gradeQuiz(this.candidateAnswers);
+  gradeQuiz(this.candidateAnswers); 
 }
 
 // ----------- Don't write any code or change any code below this line ---------- //
